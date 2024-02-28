@@ -75,32 +75,56 @@ Monday();
 
 // afterExercise();
 
-function callOnMe() {
-    console.log('This is me called back');
+// function callOnMe() {
+//     console.log('This is me called back');
+// }
+
+// function receivesAFunction(hiCallBack) {
+//     hiCallBack();
+// }
+
+// function test() {
+//     receivesAFunction(callOnMe);
+// }
+
+// test();
+
+// function returnsANamedFunction() {
+//     return function namedFunction() {
+//         console.log("This is a named function");
+//     };
+
+// }
+
+// const myNamedFunction = returnsANamedFunction();
+// myNamedFunction();
+
+// function returnsAnAnonymousFunction() {
+//     return function() {
+
+//     };
+// }
+
+function callMeWHenEver() {
+    console.log("Hello, world");
 }
 
-function receivesAFunction(hiCallBack) {
-    hiCallBack();
+function receivesAFunction(hello) {
+    hello();
 }
 
 function test() {
-    receivesAFunction(callOnMe);
+    return hello(callMeWHenEver);
 }
-
-test();
 
 function returnsANamedFunction() {
     return function namedFunction() {
-        console.log("This is a named function");
-    };
-
+        console.log("I am unnamed");
+    }
 }
-
-const myNamedFunction = returnsANamedFunction();
-myNamedFunction();
 
 function returnsAnAnonymousFunction() {
     return function() {
 
-    };
+    }
 }
